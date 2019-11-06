@@ -8,5 +8,5 @@ React Js
 
 # Author
 
-Guru prasath
+* Guru prasath
 
