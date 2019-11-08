@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const url = "https://nut-case.s3.amazonaws.com/jobs.json";
 
-export class App extends React.Component{
+class App extends React.Component{
   constructor(props) {
   super(props);
   this.state = {
