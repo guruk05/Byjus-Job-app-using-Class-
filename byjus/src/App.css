@@ -47,3 +47,18 @@
     width:70em;
     color:black;
   }
+
+  .headerContent{
+    background-color: blue;
+  }
+  
+  .line{
+    color:black;
+  }
+  
+  .apply{
+    color:white;
+  }
+  .apply:hover{
+    color:white;
+  }
