@@ -10,7 +10,10 @@ const url = "https://nut-case.s3.amazonaws.com/jobs.json";
 export class App extends React.Component{
   constructor(props) {
   super(props);
-    
+  this.state = {
+    jobDatas: [],
+    value: ""
+ };
   }
 }
 
@@ -20,15 +23,14 @@ componentDidMount = async() => {
   const jobs = data.data;
   this.setState({jobDatas: jobs });
   // console.log(this.state.jobDatas);
-}
+};
 
- render(){
+  render(); {
   return(
     <div>
     <header className = "header">
            CracKit
          </header>
-    </div>
     <div className = "searchText"><h3>Find Your Dream Jobs Here</h3></div>
     <form className = "fields">
     <input className = "search-Form" type = "text" value = {this.state.value} onChange = {this.handleInput}/>
@@ -56,10 +58,10 @@ componentDidMount = async() => {
               </Card.Body>
             </Card>
            )
-         }
-
+         })
+};
+    </div>
   )
-}
  }
 
 export default App;
