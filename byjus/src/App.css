@@ -28,3 +28,8 @@
     height:2.3em;
     border-style:groove;
   }
+
+  .search-Form:focus {
+    outline:none;
+    border-color: #3b444b;
+  }
