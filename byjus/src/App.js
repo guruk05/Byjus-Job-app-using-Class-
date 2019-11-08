@@ -36,11 +36,30 @@ componentDidMount = async() => {
          </form>
          {this.state.jobDatas.map(jobs => {
            return(
-
+             <Card className = "cardContent">
+              <Card.Header className = "headerContent" style={{ backgroundcolor: 'black' }}><h5>{jobs.title}</h5></Card.Header>
+              <Card.Body>
+                <Card.Title><h6>{jobs.companyname}</h6></Card.Title>
+                <hr className = "line"></hr>
+                <Card.Text>
+                  <p>{jobs.location}</p>
+                  <hr className = "line"></hr>
+                  <p>{jobs.experience} </p>
+                  <hr className = "line"></hr>
+                  <p>{jobs.skills}</p>
+                  <hr className = "line"></hr>
+                  <p>{jobs.type}</p>
+                  <hr className = "line"></hr>
+                  <p>{jobs.enddate}</p>
+                </Card.Text>
+                <Button variant = "primary" className = "apply"><a className = "apply" href = {jobs.applylink}> Apply here </a></Button>
+              </Card.Body>
+            </Card>
            )
          }
 
   )
 }
+ }
 
 export default App;
