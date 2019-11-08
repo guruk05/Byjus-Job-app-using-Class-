@@ -32,6 +32,11 @@ componentDidMount = async() => {
     <input className = "search-Form" type = "text" value = {this.state.value} onChange = {this.handleInput}/>
            <Button onClick = {this.showResults} variant = "secondary" className = "searchButton">Search</Button>
          </form>
+         {this.state.jobDatas.map(jobs => {
+           return(
+             
+           )
+         }
 
   )
 }
