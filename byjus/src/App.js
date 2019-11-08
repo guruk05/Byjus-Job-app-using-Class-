@@ -15,7 +15,7 @@ export class App extends React.Component{
     value: ""
  };
   }
-}
+
 
 componentDidMount = async() => {
   const jobData = await fetch(url);
@@ -25,7 +25,13 @@ componentDidMount = async() => {
   // console.log(this.state.jobDatas);
 };
 
-  render(); {
+
+handleInput(e) {
+  this.setState({ value: e.target.value})
+}
+
+
+  render() {
   return(
     <div>
     <header className = "header">
@@ -63,5 +69,6 @@ componentDidMount = async() => {
     </div>
   )
  }
+}
 
 export default App;
