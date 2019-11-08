@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { Card , Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -34,7 +36,7 @@ componentDidMount = async() => {
          </form>
          {this.state.jobDatas.map(jobs => {
            return(
-             
+
            )
          }
 
