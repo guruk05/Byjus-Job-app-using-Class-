@@ -15,6 +15,8 @@ export class App extends React.Component{
            CracKit
          </header>
     </div>
+    <div className = "searchText"><h3>Find Your Dream Jobs Here</h3></div>
+    
   )
 }
 
