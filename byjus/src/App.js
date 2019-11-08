@@ -16,7 +16,9 @@ export class App extends React.Component{
          </header>
     </div>
     <div className = "searchText"><h3>Find Your Dream Jobs Here</h3></div>
-    
+    <form className = "fields">
+           
+         </form>
   )
 }
 
