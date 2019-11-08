@@ -14,6 +14,8 @@ export class App extends React.Component{
     jobDatas: [],
     value: ""
  };
+ this.handleInput = this.handleInput.bind(this);
+  this.showResults = this.showResults.bind(this);
   }
 
 
