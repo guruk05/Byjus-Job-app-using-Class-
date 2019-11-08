@@ -12,6 +12,14 @@ export class App extends React.Component{
   }
 }
 
+componentDidMount = async() => {
+  const jobData = await fetch(url);
+  const data = await jobData.json();
+  const jobs = data.data;
+  this.setState({jobDatas: jobs });
+  // console.log(this.state.jobDatas);
+}
+
  render(){
   return(
     <div>
