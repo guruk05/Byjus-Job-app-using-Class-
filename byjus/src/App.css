@@ -35,7 +35,8 @@
   }
 
   .searchButton {
-    margin-left: 5em;
+    margin-left: -1em;
+    margin-bottom: 0.4em;
     height:2.3em;
     width:5em;
   }
@@ -59,7 +60,7 @@
   .apply{
     color:white;
   }
-  
+
   .apply:hover{
     color:white;
   }
