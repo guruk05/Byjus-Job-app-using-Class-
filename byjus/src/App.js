@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
 
+
+
+const url = "https://nut-case.s3.amazonaws.com/jobs.json";
+
 export class App extends React.Component{
   constructor(props) {
   super(props);
@@ -20,6 +24,7 @@ export class App extends React.Component{
     <input className = "search-Form" type = "text" value = {this.state.value} onChange = {this.handleInput}/>
            <Button onClick = {this.showResults} variant = "secondary" className = "searchButton">Search</Button>
          </form>
+
   )
 }
 
