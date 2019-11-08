@@ -8,8 +8,14 @@ export class App extends React.Component{
   }
 }
 
-render() {
-  
+ render(){
+  return(
+    <div>
+    <header className = "header">
+           CracKit
+         </header>
+    </div>
+  )
 }
 
 export default App;
