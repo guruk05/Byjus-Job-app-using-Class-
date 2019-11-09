@@ -12,7 +12,10 @@ class App extends React.Component{
   super(props);
   this.state = {
     jobDatas: [],
-    value: ""
+    value: "",
+    loading:false,
+   
+    
  };
  this.handleInput = this.handleInput.bind(this);
   this.showResults = this.showResults.bind(this);
@@ -20,10 +23,12 @@ class App extends React.Component{
 
 
 componentDidMount = async() => {
+  
   const jobData = await fetch(url);
   const data = await jobData.json();
   const jobs = data.data;
   this.setState({jobDatas: jobs });
+  
   // console.log(this.state.jobDatas);
 };
 
@@ -36,6 +41,7 @@ showResults(e) {
   e.preventDefault();
   let filteredJobs = this.state.jobDatas.filter(job => job.title === this.state.value || job.location === this.state.value || job.companyname === this.state.value);
   this.setState({jobDatas:filteredJobs})
+  // this.setState({loading:true});
 }
 
   render() {
