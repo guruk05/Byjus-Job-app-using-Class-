@@ -14,8 +14,6 @@ class App extends React.Component{
     jobDatas: [],
     value: "",
     loading:false,
-   
-    
  };
  this.handleInput = this.handleInput.bind(this);
   this.showResults = this.showResults.bind(this);
