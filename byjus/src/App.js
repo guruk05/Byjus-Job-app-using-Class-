@@ -63,7 +63,7 @@ showResults(e) {
     <input className = "search-Form" type = "text" value = {this.state.value} onChange = {this.handleInput}/>
            <Button onClick = {this.showResults} variant = "secondary" className = "searchButton">Search</Button>
          </form>
-         {this.state.jobDatas.map(jobs => {
+         {currentJobs.map(jobs => {
            return(
              <Card className = "cardContent">
               <Card.Header className = "headerContent" style={{ backgroundcolor: 'black' }}><h5>{jobs.title}</h5></Card.Header>
