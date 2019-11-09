@@ -15,18 +15,19 @@ class App extends React.Component{
     value: "",
     loading:false,
  };
+
  this.handleInput = this.handleInput.bind(this);
   this.showResults = this.showResults.bind(this);
   }
 
 
 componentDidMount = async() => {
-  
+  this.setState({loading:true});
   const jobData = await fetch(url);
   const data = await jobData.json();
   const jobs = data.data;
   this.setState({jobDatas: jobs });
-  
+  this.setState({loading:false});
   // console.log(this.state.jobDatas);
 };
 
