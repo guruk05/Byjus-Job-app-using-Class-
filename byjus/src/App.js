@@ -44,6 +44,7 @@ showResults(e) {
 }
 
 pagination = ({jobsPerPage, totalJobs}) => {
+ const pageNumbers = [];
  
 }
 
