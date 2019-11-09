@@ -45,7 +45,8 @@ showResults(e) {
 
   render() {
     const indexOfLastJob = currentPage * jobsPerPage;
-    
+    const indexOfFirstJob = indexOfLastJob - postsPerPage;
+  
     if(this.state.loading) {
      return(
       <div><h3> loading ... </h3></div>
