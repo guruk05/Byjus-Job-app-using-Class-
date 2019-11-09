@@ -14,8 +14,8 @@ class App extends React.Component {
     jobDatas: [],
     value: "",
     loading:false,
-    currentPage:1,
-    jobsPerPage:10
+    currentPage:[1],
+    jobsPerPage:[10]
  };
 
  this.handleInput = this.handleInput.bind(this);
@@ -44,9 +44,13 @@ showResults(e) {
 }
 
   render() {
-    const indexOfLastJob = currentPage * jobsPerPage;
-    const indexOfFirstJob = indexOfLastJob - jobsPerPage;
-    const currentJobs = jobDatas.slice(indexOfLastJob, indexOfFirstJob);
+
+    const indexOfLastJob = this.state.currentPage * this.state.jobsPerPage;
+    const indexOfFirstJob = indexOfLastJob - this.state.jobsPerPage;
+    const currentJobs = this.state.jobDatas.slice(indexOfFirstJob,indexOfLastJob);
+
+    console.log(currentJobs);
+
     if(this.state.loading) {
      return(
       <div><h3> loading ... </h3></div>
