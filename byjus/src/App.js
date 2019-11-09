@@ -44,6 +44,8 @@ showResults(e) {
 }
 
   render() {
+    const indexOfLastJob = currentPage * jobsPerPage;
+    
     if(this.state.loading) {
      return(
       <div><h3> loading ... </h3></div>
