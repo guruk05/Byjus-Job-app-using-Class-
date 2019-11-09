@@ -40,10 +40,12 @@ showResults(e) {
   e.preventDefault();
   let filteredJobs = this.state.jobDatas.filter(job => job.title === this.state.value || job.location === this.state.value || job.companyname === this.state.value);
   this.setState({jobDatas:filteredJobs})
-  // this.setState({loading:true});
 }
 
   render() {
+    if(loading){
+      <div>loading...</div>
+    }
   return(
     <div>
     <header className = "header">
