@@ -43,6 +43,10 @@ showResults(e) {
   this.setState({jobDatas:filteredJobs});
 }
 
+pagination = ({jobsPerPage, totalJobs}) => {
+ 
+}
+
   render() {
 
     const indexOfLastJob = this.state.currentPage * this.state.jobsPerPage;
