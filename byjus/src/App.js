@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const url = "https://nut-case.s3.amazonaws.com/jobs.json";
 
-class App extends React.Component{
+class App extends React.Component {
   constructor(props) {
   super(props);
   this.state = {
@@ -28,7 +28,6 @@ componentDidMount = async() => {
   const jobs = data.data;
   this.setState({jobDatas: jobs });
   this.setState({loading:false});
-  // console.log(this.state.jobDatas);
 };
 
 
@@ -43,14 +42,17 @@ showResults(e) {
 }
 
   render() {
-    if(loading){
-      <div>loading...</div>
+    if(this.state.loading) {
+     return(
+      <div><h3> loading ... </h3></div>
+     )
     }
+
   return(
     <div>
     <header className = "header">
            CracKit
-         </header>
+    </header>
     <div className = "searchText"><h3>Find Your Dream Jobs Here</h3></div>
     <form className = "fields">
     <input className = "search-Form" type = "text" value = {this.state.value} onChange = {this.handleInput}/>
