@@ -15,6 +15,7 @@ class App extends React.Component {
     value: "",
     loading:false,
     currentPage:1,
+    jobsPerPage:10
  };
 
  this.handleInput = this.handleInput.bind(this);
