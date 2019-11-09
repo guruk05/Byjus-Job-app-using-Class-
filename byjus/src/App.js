@@ -9,16 +9,17 @@ const url = "https://nut-case.s3.amazonaws.com/jobs.json";
 
 class App extends React.Component {
   constructor(props) {
-  super(props);
+  super(props)
   this.state = {
     jobDatas: [],
     value: "",
     loading:false,
+    currentPage:1,
  };
 
  this.handleInput = this.handleInput.bind(this);
   this.showResults = this.showResults.bind(this);
-  }
+  };
 
 
 componentDidMount = async() => {
@@ -33,12 +34,12 @@ componentDidMount = async() => {
 
 handleInput(e) {
   this.setState({ value: e.target.value})
-}
+};
 
 showResults(e) {
   e.preventDefault();
   let filteredJobs = this.state.jobDatas.filter(job => job.title === this.state.value || job.location === this.state.value || job.companyname === this.state.value);
-  this.setState({jobDatas:filteredJobs})
+  this.setState({jobDatas:filteredJobs});
 }
 
   render() {
@@ -46,7 +47,7 @@ showResults(e) {
      return(
       <div><h3> loading ... </h3></div>
      )
-    }
+    };
 
   return(
     <div>
