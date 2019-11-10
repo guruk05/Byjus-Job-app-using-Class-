@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Pagination from './pagination.js'
 import { Card , Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -53,11 +54,12 @@ showResults(e) {
 
     console.log(currentJobs);
 
-    if(this.state.loading) {
-     return(
+    if(this.state.loading) { 
+     return( 
       <div><h3> loading ... </h3></div>
      )
     };
+
 
   return(
     <div>
@@ -93,6 +95,7 @@ showResults(e) {
            )
          })
 };
+    <Pagination jobsPerPage = {this.state.jobsPerPage} totalPosts = {this.state.jobDatas.length} paginate = {paginate} />
     </div>
   )
  }
