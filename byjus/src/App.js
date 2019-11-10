@@ -15,12 +15,13 @@ class App extends React.Component {
     jobDatas: [],
     value: "",
     loading:false,
+    jobsPerPage:[75],
     currentPage:[1],
-    jobsPerPage:[10]
  };
 
  this.handleInput = this.handleInput.bind(this);
   this.showResults = this.showResults.bind(this);
+  this.paginate = this.paginate.bind(this);
   };
 
 
@@ -44,7 +45,10 @@ showResults(e) {
   this.setState({jobDatas:filteredJobs});
 }
 
-
+paginate(pageNumber){
+  console.log(pageNumber);
+  this.setState({CurrentPage: pageNumber});
+}
 
   render() {
 
@@ -53,6 +57,8 @@ showResults(e) {
     const currentJobs = this.state.jobDatas.slice(indexOfFirstJob,indexOfLastJob);
 
     console.log(currentJobs);
+
+    
 
     if(this.state.loading) { 
      return( 
@@ -95,7 +101,9 @@ showResults(e) {
            )
          })
 };
-    <Pagination jobsPerPage = {this.state.jobsPerPage} totalPosts = {this.state.jobDatas.length} paginate = {paginate} />
+    <Pagination className = "pagination" jobsPerPage = {this.state.jobsPerPage} 
+    totalPosts = {this.state.jobDatas.length} 
+    paginate = {this.paginate} /> 
     </div>
   )
  }
