@@ -9,7 +9,14 @@ class Pagination extends React.Component {
             pageNumbers.push(i);
         }
 
-        
+        return (
+            <nav>
+                <ul className="pagination">
+                   
+                </ul>
+            </nav>
+        )
+    }
 }
 
 export default Pagination;
