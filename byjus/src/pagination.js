@@ -12,7 +12,14 @@ class Pagination extends React.Component {
         return (
             <nav>
                 <ul className="pagination">
-                   
+                    {pageNumbers.map(number => {
+                        return(
+                            <li className="page-item">
+                            
+                            </a>
+                        </li>
+                        )
+                    })}
                 </ul>
             </nav>
         )
