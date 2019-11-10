@@ -15,7 +15,8 @@ class Pagination extends React.Component {
                     {pageNumbers.map(number => {
                         return(
                             <li className="page-item">
-                            
+                            <a onClick = {() => paginate(number)} href = "!#" className = "page-link">
+                                {number} 
                             </a>
                         </li>
                         )
