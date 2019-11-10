@@ -68,7 +68,7 @@ paginate(pageNumber){
     };
 
 
-  return(
+  return (
     <div>
     <Header />
     <div className = "searchText"><h3>Find Your Dream Jobs Here</h3></div>
