@@ -46,9 +46,9 @@ showResults(e) {
   this.setState({jobDatas:filteredJobs});
 }
 
-paginate(pageNumber){
-  console.log(pageNumber);
-  this.setState({CurrentPage: pageNumber});
+paginate(pageNumber) {
+  this.setState({currentPage: pageNumber});
+  console.log(this.state.currentPage);
 }
 
   render() {
@@ -56,10 +56,6 @@ paginate(pageNumber){
     const indexOfLastJob = this.state.currentPage * this.state.jobsPerPage;
     const indexOfFirstJob = indexOfLastJob - this.state.jobsPerPage;
     const currentJobs = this.state.jobDatas.slice(indexOfFirstJob,indexOfLastJob);
-
-    console.log(currentJobs);
-
-    
 
     if(this.state.loading) { 
      return( 
