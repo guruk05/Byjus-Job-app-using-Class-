@@ -43,11 +43,7 @@ showResults(e) {
   this.setState({jobDatas:filteredJobs});
 }
 
-pagination = ({jobsPerPage, totalJobs}) => {
- const pageNumbers = [];
- for(let i = 1; i <= Math.ceil(totalJobs / jobsPerPage); i++)
- pageNumbers.push(i);
-}
+
 
   render() {
 
