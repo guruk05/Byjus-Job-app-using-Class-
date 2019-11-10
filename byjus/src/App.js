@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Header from './header.js';
 import Pagination from './pagination.js'
 import { Card , Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -69,9 +70,7 @@ paginate(pageNumber){
 
   return(
     <div>
-    <header className = "header">
-           CracKit
-    </header>
+    
     <div className = "searchText"><h3>Find Your Dream Jobs Here</h3></div>
     <form className = "fields">
     <input className = "search-Form" type = "text" value = {this.state.value} onChange = {this.handleInput}/>
