@@ -73,9 +73,9 @@ paginate(pageNumber) {
            <Button onClick = {this.showResults} variant = "secondary" className = "searchButton">Search</Button>
          </form>
          {currentJobs.map(jobs => {
-           return(
+           return (
              <Card className = "cardContent">
-              <Card.Header className = "headerContent" style={{ backgroundcolor: 'black' }}><h5>{jobs.title}</h5></Card.Header>
+              <Card.Header style = {{}} className = "content" style={{ backgroundcolor: 'black' }}><h5>{jobs.title}</h5></Card.Header>
               <Card.Body>
                 <Card.Title><h6>{jobs.companyname}</h6></Card.Title>
                 <hr className = "line"></hr>

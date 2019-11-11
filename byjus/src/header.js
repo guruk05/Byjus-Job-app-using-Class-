@@ -6,6 +6,7 @@ class Header extends React.Component{
         return(
             <header className = "header">
            CracKit
+           {/* <div className = "about">About</div> */}
     </header>
         )
     }

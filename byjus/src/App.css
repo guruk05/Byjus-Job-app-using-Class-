@@ -3,12 +3,24 @@
   min-height: 10vh;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   letter-spacing: 5px;
   font-size: 2.3em;
+  }
+
+  .content{
+    color:green;
+    background-color: green;
+  }
+
+  .about{
+    margin-left: auto;
+    /* margin-bottom: 2em; */
+      /* color:black  */
   }
 
   .searchText{
@@ -62,7 +74,7 @@
   }
 
   .apply:hover{
-    color:white;
+    color:rgb(156, 99, 99);
   }
 
   .pagination{
@@ -70,3 +82,5 @@
     margin-top: 5em;
     margin-bottom: 5em;
   }
+
+  
