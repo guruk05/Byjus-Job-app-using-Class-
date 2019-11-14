@@ -46,6 +46,7 @@ showResults(e) {
   let filteredJobs = this.state.jobDatas.filter(job => job.title === this.state.value || job.location === this.state.value || job.companyname === this.state.value);
   this.setState({jobDatas:filteredJobs});
   let indexOfFilteredJobs = filteredJobs.length;
+  this.setState({indexOfAllJobs:indexOfFilteredJobs});
 }
 
 paginate(pageNumber) {
