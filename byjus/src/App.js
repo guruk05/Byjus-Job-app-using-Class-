@@ -48,6 +48,7 @@ showResults(e) {
   console.log(this.state.jobDatas);
   let filteredJobs = this.state.jobDatas.filter(job => job.title === this.state.value || job.location === this.state.value || job.companyname === this.state.value);
   this.setState({jobDatas:filteredJobs});
+  this.setState({jobDatas: jobs });
   let indexOfFilteredJobs = filteredJobs.length;
   console.log("ShowResults is Running Again")
   
