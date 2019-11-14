@@ -35,7 +35,7 @@ componentDidMount = async() => {
   const jobs = data.data;
   this.setState({jobDatas: jobs });
   this.setState({loading:false});
-  
+  this.setState({jobs:jobs});
   console.log("ComponentDidMOunt is Running")
 };
 
@@ -50,7 +50,7 @@ showResults(e) {
   this.setState({jobDatas:filteredJobs});
   let indexOfFilteredJobs = filteredJobs.length;
   console.log("ShowResults is Running Again")
-
+  
   // this.setState({indexOfAllJobs:indexOfFilteredJobs});
 }
 
