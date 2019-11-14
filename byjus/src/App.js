@@ -14,6 +14,7 @@ class App extends React.Component {
   super(props)
   this.state = {
     jobDatas: [],
+    jobs:[],
     value: "",
     loading:false,
     jobsPerPage:[75],
@@ -34,8 +35,9 @@ componentDidMount = async() => {
   const jobs = data.data;
   this.setState({jobDatas: jobs });
   this.setState({loading:false});
+  
+  console.log("ComponentDidMOunt is Running")
 };
-
 
 handleInput(e) {
   this.setState({ value: e.target.value})
@@ -43,10 +45,13 @@ handleInput(e) {
 
 showResults(e) {
   e.preventDefault();
+  console.log(this.state.jobDatas);
   let filteredJobs = this.state.jobDatas.filter(job => job.title === this.state.value || job.location === this.state.value || job.companyname === this.state.value);
   this.setState({jobDatas:filteredJobs});
   let indexOfFilteredJobs = filteredJobs.length;
-  this.setState({indexOfAllJobs:indexOfFilteredJobs});
+  console.log("ShowResults is Running Again")
+
+  // this.setState({indexOfAllJobs:indexOfFilteredJobs});
 }
 
 paginate(pageNumber) {
