@@ -75,7 +75,7 @@ paginate(pageNumber) {
     <input className = "search-Form" type = "text" value = {this.state.value} onChange = {this.handleInput}/>
            <Button onClick = {this.showResults} variant = "secondary" className = "searchButton">Search</Button>
          </form>
-         <div className = "indexOfJobs"><h5>Total Jobs Found :</h5></div>
+         <div className = "indexOfJobs"><h5>Total Jobs Found : {this.state.indexOfAllJobs}</h5></div>
          {currentJobs.map(jobs => {
            return (
              <Card className = "cardContent">
