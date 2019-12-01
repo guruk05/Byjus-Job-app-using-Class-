@@ -25,7 +25,7 @@ React Pagination is also Added in this project.
 
 ![crackit2](https://user-images.githubusercontent.com/54667515/69914904-4b91e780-146f-11ea-8d3e-7f1681e988a0.PNG)
 
-<i>Search Content<i>
+#### <i>Search Content<i>
 
 
 # To run this project locally 
