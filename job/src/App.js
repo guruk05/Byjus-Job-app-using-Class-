@@ -17,7 +17,7 @@ class App extends React.Component {
       loading: false,
       jobsPerPage: [75],
       currentPage: [1],
-      indexOfAllJobs: "1709"
+      indexOfAllJobs: "58"
     };
 
     this.handleInput = this.handleInput.bind(this);

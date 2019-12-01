@@ -1,10 +1,11 @@
 # Job Search Application 
 
 
-A Job Application developed to practice <a href="https://reactjs.org/"> React </a> Functional Components - <a href="https://reactjs.org/docs/hooks-overview.html"> Hooks </a>, <a href="https://reactjs.org/docs/components-and-props.html"> Props </a> and <a href="https://reactjs.org/docs/introducing-jsx.html"> JSX.
+A Job Application developed to practice <a href="https://reactjs.org/"> React Js</a> Class Components - <a href="https://reactjs.org/docs/faq-state.html"> States </a>, <a href="https://reactjs.org/docs/components-and-props.html"> Props </a>, <a href="https://reactjs.org/docs/react-component.html"> Lifecycle Methods </a>, Pagination and <a href="https://reactjs.org/docs/introducing-jsx.html"> JSX.
 </a> 
 
 In this Application users can view Jobs and search for jobs with respect to Location and Skills.
+React Pagination is also Added in this project.
 
 # Technology used
 
@@ -12,11 +13,13 @@ In this Application users can view Jobs and search for jobs with respect to Loca
 
 # Preview
 
+![crackit1](https://user-images.githubusercontent.com/54667515/69914881-23a28400-146f-11ea-9b0a-6e87a4e386a5.PNG)
 
-![Jobbean1](https://user-images.githubusercontent.com/54667515/69914065-d79f1180-1465-11ea-8feb-3ed60a2fdfde.PNG)
+
+![crackit3](https://user-images.githubusercontent.com/54667515/69914895-3ae17180-146f-11ea-912e-5c2c7bdecd57.PNG)
 
 
-![JobBean 2](https://user-images.githubusercontent.com/54667515/69914066-db329880-1465-11ea-8e02-e4aa7dad9e06.PNG)
+![crackit2](https://user-images.githubusercontent.com/54667515/69914904-4b91e780-146f-11ea-8d3e-7f1681e988a0.PNG)
 
 
 # To run this project locally 
@@ -25,7 +28,7 @@ In this Application users can view Jobs and search for jobs with respect to Loca
 
 ### Clone the project using Git Bash / Command prompt:
 ```
-git clone https://github.com/guruk05/JobBean-Job-search-Application.git 
+git clone https://github.com/guruk05/Crackit-Job-Search-Application.git 
 ```
 
 
