@@ -15,7 +15,7 @@ React Pagination is also Added in this project.
 
 ![crackit1](https://user-images.githubusercontent.com/54667515/69914881-23a28400-146f-11ea-9b0a-6e87a4e386a5.PNG)
 
-<i>Home Page<i>
+#### <i>Home Page<i>
 
 
 ![crackit3](https://user-images.githubusercontent.com/54667515/69914895-3ae17180-146f-11ea-912e-5c2c7bdecd57.PNG)
